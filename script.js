@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Durante uma aula, seu professor apresenta uma ferramenta de Inteligência Artificial que consegue explicar conteúdos, responder perguntas e ajudar nos estudos. Como você reage?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Fico curioso e quero experimentar a ferramenta para aprender coisas novas.",
+                afirmacao: "Começou a explorar a Inteligência Artificial e descobriu novas maneiras de aprender e estudar."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Fico preocupado, pois acredito que os alunos podem deixar de pensar por conta própria.",
+                afirmacao: "Passou a refletir sobre os riscos da Inteligência Artificial e a importância de desenvolver o pensamento crítico."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Seu professor passou uma pesquisa sobre meio ambiente. Você decide utilizar uma ferramenta de IA para ajudar na atividade. Como você utiliza essa tecnologia?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Peço para a IA explicar o assunto e me ajudar a encontrar informações para a pesquisa.",
+                afirmacao: "Aprendeu a utilizar a IA como uma ferramenta de apoio para encontrar informações e compreender assuntos difíceis."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Faço minha própria pesquisa em livros, sites e materiais indicados pelo professor.",
+                afirmacao: "Desenvolveu suas habilidades de pesquisa e percebeu que existem muitas maneiras de aprender sem depender da Inteligência Artificial."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Na sua escola, alguns alunos começaram a entregar trabalhos feitos inteiramente por Inteligência Artificial, sem revisar ou compreender o conteúdo. O que você pensa sobre isso?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "A IA pode ajudar bastante, mas os alunos precisam entender e revisar o que ela produz.",
+                afirmacao: "Passou a defender o uso responsável da Inteligência Artificial, mostrando aos colegas que a tecnologia deve ajudar na aprendizagem, e não substituir o esforço dos estudantes."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Se a IA consegue fazer o trabalho, não vejo problema em entregar tudo pronto.",
+                afirmacao: "Começou a depender da Inteligência Artificial para realizar suas atividades e percebeu que estava deixando de desenvolver suas próprias habilidades."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Sua professora propôs um projeto criativo sobre o futuro da educação. Você pode utilizar ferramentas de Inteligência Artificial para desenvolver sua ideia. O que você escolhe fazer?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Utilizo uma IA para criar imagens, textos e ideias que complementem meu projeto.",
+                afirmacao: "Descobriu novas possibilidades criativas com a Inteligência Artificial e começou a utilizar a tecnologia para desenvolver projetos inovadores na escola."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Prefiro criar meu projeto com desenhos, pesquisas e ideias próprias, sem utilizar IA.",
+                afirmacao: "Desenvolveu sua criatividade por meio de métodos tradicionais e percebeu que a tecnologia é uma opção, mas não a única maneira de criar."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "A escola decidiu ampliar o uso da Inteligência Artificial nas salas de aula. Alguns alunos acreditam que ela poderá substituir os professores no futuro. Qual é a sua opinião?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Acredito que a IA pode ajudar os professores, mas a presença humana continua sendo essencial na educação.",
+                afirmacao: "Passou a incentivar o uso da Inteligência Artificial como uma aliada dos professores, valorizando a empatia, o diálogo e a orientação humana no processo de aprendizagem."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Acredito que, no futuro, a IA poderá ensinar melhor do que os professores.",
+                afirmacao: "Começou a pesquisar sobre o futuro da educação e descobriu que, apesar dos avanços tecnológicos, o papel dos professores continua sendo muito importante para a formação dos estudantes."
             }
         ]
-    },
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
